@@ -1,0 +1,63 @@
+.navbar{
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+
+}
+.logo img {
+    width :50px;
+}
+
+.collapse{
+    display: none;
+    position: relative;
+    transition: 1s all ease-in-out;
+}
+
+#responsive-content{
+    display: none;
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    right: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: 50px;
+}
+
+.content {
+    width: 40%;
+    justify-content: space-between;
+    display: flex;
+}
+
+.content a{
+    font-size: 20px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: rgb(48, 116, 176);
+    
+}
+
+.content a:hover {
+    color: rgb(18, 55, 88);
+    text-decoration: underline;
+}
+@media only screen and (max-width : 1285px) {
+    .collapse{
+        display: block;
+    }
+    .content {
+        display: none;
+    }
+}
+.todolist{
+    width: 500px;
+    margin: 100px auto ;
+    height: 500px;
+    
+}
